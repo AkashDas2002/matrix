@@ -3,13 +3,16 @@ from matrix import *
 
 
 def draw_lines( matrix, screen, color ):
-    pass
+    n = len(matrix)
+    for i in range(n-1):
+        draw_line(matrix[i][0],matrix[i][1],matrix[i+1][0],matrix[i+1][1],screen, color)
 
 def add_edge( matrix, x0, y0, z0, x1, y1, z1 ):
-    pass
+    matrix.append([x0,y0,z0,1])
+    matrix.append([x0,y0,z0,1])
 
 def add_point( matrix, x, y, z=0 ):
-    pass
+    matrix.append([x,y,z,1])
 
 
 
