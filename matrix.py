@@ -61,7 +61,19 @@ def matrix_mult( m1, m2 ):
     for x in range(numCols):
         m2.append(newmat[x])
 
-
+def spiralSim(matrix, angle, factor, xcor, ycor):
+    rotate = [[factor * math.cos(angle), factor * math.sin(angle),0,0], [-1 * factor * math.sin(angle), factor * math.cos(angle),0,0],[0,0,0,0],[0,0,0,1]]
+    i = 0
+    while i < len(matrix):
+        matrix[i][0] = matrix[i][0] - xcor
+        matrix[i][1] = matrix[i][1] - ycor
+        i += 1
+    matrix_mult(rotate,matrix)
+    i = 0
+    while i < len(matrix):
+        matrix[i][0] = matrix[i][0] + xcor
+        matrix[i][1] = matrix[i][1] + ycor
+        i += 1
 
 def new_matrix(rows = 4, cols = 4):
     m = []

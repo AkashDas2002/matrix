@@ -2,6 +2,8 @@ from display import *
 from draw import *
 from matrix import *
 
+import math
+
 screen = new_screen()
 color = [ 0, 255, 0 ]
 matrix = new_matrix()
@@ -32,8 +34,76 @@ matrix_mult(m1,m2)
 print_matrix(m2)
 
 
+matrix.clear()
+amat = []
+add_point(matrix,250,0,0)
+add_point(amat, 250, 0, 0)
+for i in range(120):
+    spiralSim(amat, math.pi/60,1,250,250)
+    add_point(matrix,amat[0][0],amat[0][1],amat[0][2])
+draw_lines(matrix,screen,color)
 
-add_edge(matrix,0,0,0,250,250,0)
+r = 50.0/60.0
+a = 250 + (1 - r) * 250 / (r * r + 1)
+b = 250 + (r - r*r) * 250 / (r * r + 1)
 
-draw_lines( matrix, screen, color )
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+
+spiralSim(matrix, math.pi / 2, r, a, b)
+draw_lines(matrix,screen,color)
+# draw_lines( matrix, screen, color )
+# matrix_mult(rotate,matrix)
+#
+# draw_lines( matrix, screen, color )
+#
+# matrix_mult(rotate,matrix)
+#
+# draw_lines( matrix, screen, color )
+#
+# matrix_mult(rotate,matrix)
+#
+# draw_lines( matrix, screen, color )
+#
+# matrix_mult(rotate,matrix)
+#
+# draw_lines( matrix, screen, color )
+#
+# matrix_mult(rotate,matrix)
+#
+# draw_lines( matrix, screen, color )
+#
+# matrix_mult(rotate,matrix)
+
+
+
+
+
 display(screen)
