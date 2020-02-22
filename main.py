@@ -47,38 +47,10 @@ r = 50.0/60.0
 a = 250 + (1 - r) * 250 / (r * r + 1)
 b = 250 + (r - r*r) * 250 / (r * r + 1)
 
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
+for i in range(8):
+    spiralSim(matrix, math.pi / 2, r, a, b)
+    draw_lines(matrix,screen,color)
 
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
-
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
-
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
-
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
-
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
-
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
-
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
-
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
-
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
-
-spiralSim(matrix, math.pi / 2, r, a, b)
-draw_lines(matrix,screen,color)
 # draw_lines( matrix, screen, color )
 # matrix_mult(rotate,matrix)
 #
