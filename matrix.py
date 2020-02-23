@@ -57,7 +57,7 @@ def matrix_mult( m1, m2 ):
             for n in range(len(m1)):
                 sum += m1[n][j] *  m2[i][n]
             newmat[-1].append(sum)
-    m2.clear()
+    m2 = []
     for x in range(numCols):
         m2.append(newmat[x])
 

@@ -34,7 +34,7 @@ matrix_mult(m1,m2)
 print_matrix(m2)
 
 
-matrix.clear()
+matrix = []
 amat = []
 add_point(matrix,250,0,0)
 add_point(amat, 250, 0, 0)
