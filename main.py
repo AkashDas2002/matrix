@@ -79,3 +79,6 @@ for i in range(8):
 
 
 display(screen)
+save_ppm(screen, 'binary.ppm')
+save_ppm_ascii(screen, 'ascii.ppm')
+save_extension(screen, 'img.png')
