@@ -23,7 +23,7 @@ matrix_mult(m1,m2)
 print_matrix(m2)
 
 print("\nTesting Matrix multiplication. m1 = ")
-m1.clear()
+m1=[]
 add_edge(m1,1,2,3,4,5,6)
 add_edge(m1,7,8,9,10,11,12)
 print_matrix(m1)
