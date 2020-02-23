@@ -66,4 +66,4 @@ def display( screen ):
     save_ppm_ascii( screen, ppm_name )
     p = Popen( ['display', ppm_name], stdin=PIPE, stdout = PIPE )
     p.communicate()
-    #remove(ppm_name)
+    remove(ppm_name)
